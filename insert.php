@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("database.php");
+require_once("connect.php");
 $db = new Database();
 $con = $db->getConn();
 if (isset($_GET['submit'])) {
