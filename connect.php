@@ -7,7 +7,7 @@ class Database
         $server = "localhost";
         $username = "root";
         $password = "";
-        $database = "IOT";
+        $database = "iot";
         $mysqli = new mysqli($server, $username, $password, $database);
         return $mysqli;
     }
