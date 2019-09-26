@@ -4,7 +4,7 @@ const char* ssid = "tns8";
 
 const char* password = "pppppppp";
 
-const char* host = ""; //ใส่ IP หรือ Host ของเครื่อง Database ก็ได้
+const char* host = "192.168.43.10"; //ใส่ IP หรือ Host ของเครื่อง Database ก็ได้
 
 const int httpPort = 80;
 
@@ -61,7 +61,7 @@ void loop()
 
   }
 
-  String url = "localhost/iot/insert.php?value="; //ชุด Directory ที่เก็บไฟล์ และตัวแปรที่ต้องการจะฝาก /ProjectCL/index.php?module=MCU&Rooms=0&Status=Wh&Data=
+  String url = "http://192.168.43.10/iot/insert.php?value="; //ชุด Directory ที่เก็บไฟล์ และตัวแปรที่ต้องการจะฝาก /ProjectCL/index.php?module=MCU&Rooms=0&Status=Wh&Data=
 
   url += value; //ส่งค่าตัวแปร
   value++;
