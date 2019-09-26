@@ -61,7 +61,7 @@ void loop()
 
   }
 
-  String url = "localhost/insert.php?value="; //ชุด Directory ที่เก็บไฟล์ และตัวแปรที่ต้องการจะฝาก /ProjectCL/index.php?module=MCU&Rooms=0&Status=Wh&Data=
+  String url = "localhost/iot/insert.php?value="; //ชุด Directory ที่เก็บไฟล์ และตัวแปรที่ต้องการจะฝาก /ProjectCL/index.php?module=MCU&Rooms=0&Status=Wh&Data=
 
   url += value; //ส่งค่าตัวแปร
   value++;
