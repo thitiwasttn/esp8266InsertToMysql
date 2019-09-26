@@ -3,7 +3,6 @@ session_start();
 require_once("connect.php");
 $db = new Database();
 $con = $db->getConn();
-if (isset($_GET['submit'])) {
     if(isset($_GET['value']))
     {
         $sql = "INSERT INTO data SET value = '" . $_GET['value'] . "'";
@@ -14,5 +13,5 @@ if (isset($_GET['submit'])) {
     {
 //        echo "<h1>No input</h1>";
     }
-}
+
 ?>
